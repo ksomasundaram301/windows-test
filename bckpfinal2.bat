@@ -1,0 +1,2 @@
+"C:\Program Files\7-Zip\7z" a -r "%DATE:~7,2%-%DATE:~4,2%-%DATE:~-4%-Backup.7z" "c:\backuptest\"
+ aws s3 mv "C:\jenkinstest\workspace\windowstest-deploy/" s3://infitestbucket --recursive --exclude "*" --include "*.7z"
